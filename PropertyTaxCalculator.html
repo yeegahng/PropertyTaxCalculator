@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Calculator</title>
+        <link href="styles.css" rel="stylesheet">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <p>Click "Add Property" button to add realestate property.</p>
+        <p>IMPORTANT! No EMPTY PROPERTY item should remain. Refresh the screen to start again.</p>
+        <p>MORE IMPORTANT!! "Add Property" will clear all preceding values in input forms.</p>
+        <button id="btn-add-property" onclick="addProperty()">Add Property</button>
+        <button id="btn-calculate" onclick="calculate()">Calculate</button>
+        <button id="btn-show-debuginfo" onclick="showDOMInfo()">Show DOM</button>
+
+        <table>
+            <tr>
+                <td class="view-cell" id="property-view">
+                    <div class="item-list-header" id="property-list-header">
+                        <label>Item #</label>
+                        <label>Name (Optional)</label>
+                        <label>Property Price(KRW)</label>
+                        <label>Property Type</label>
+                        <label>Property Area</label>
+                        <label>Ownership Stake(%)</label>
+                        <label>Utility Tax Exempted</label>
+                    </div>
+                </td>
+                <td class="view-cell" id="output-view"></td>
+                <td class="view-cell" id="debug-view"></td>
+            </tr>
+        </table>
+    </body>
+</html>
